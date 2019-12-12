@@ -34,5 +34,29 @@ namespace Algorithm
             arr.Add((endtime - startime).TotalSeconds);
             return arr;
         }
+
+        /// <summary>
+        /// 解密QQ的算法
+        /// </summary>
+        /// <returns>The qq.</returns>
+        /// <param name="qq">Qq.</param>
+        public string DecryptQQ(string qq)
+        {
+            string result = "";
+            Queue que = new Queue();
+            foreach (var item in qq)
+            {
+                que.Enqueue(item);
+            }
+            for (int i = 0; i < qq.Length; i++)
+            {
+                result += que.Dequeue();
+                if (que.Count != 0)
+                {
+                    que.Enqueue(que.Dequeue());
+                }
+            }
+            return result;
+        }
     }
 }

@@ -8,17 +8,25 @@ namespace Algorithm
         {
             var ex =new Exec();
             #region
-            var num = ex.FindPerfectNum(10000);
-            if (num != null)
+            //var num = ex.FindPerfectNum(10000);
+            //if (num != null)
+            //{
+            //    foreach (var item in num)
+            //    {
+            //        Console.WriteLine(item);
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Not PerfectNumber");
+            //}
+            #endregion
+
+            #region
+            var str = ex.DecryptQQ("631758924");
+            foreach (var item in str)
             {
-                foreach (var item in num)
-                {
-                    Console.WriteLine(item);
-                }
-            }
-            else
-            {
-                Console.WriteLine("Not PerfectNumber");
+                Console.Write(item);
             }
             #endregion
         }
