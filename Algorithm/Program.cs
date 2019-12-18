@@ -23,12 +23,28 @@ namespace Algorithm
             #endregion
 
             #region
-            var str = ex.DecryptQQ("631758924");
-            foreach (var item in str)
-            {
-                Console.Write(item);
-            }
+            //var str = ex.DecryptQQ("631758924");
+            //foreach (var item in str)
+            //{
+            //    Console.Write(item);
+            //}
             #endregion
+
+            #region
+            //var str = ex.DecrypttQQ("631758924");
+            //foreach (var item in str)
+            //{
+            //    Console.Write(item);
+            //}
+            #endregion
+
+            #region
+            Console.WriteLine();
+            string huiwen = "12321";
+            var wt = ex.LIFO(huiwen);
+            Console.WriteLine(wt);
+            #endregion
+            Console.ReadKey();
         }
     }
 }
