@@ -39,10 +39,15 @@ namespace Algorithm
             #endregion
 
             #region
-            Console.WriteLine();
-            string huiwen = "12321";
-            var wt = ex.LIFO(huiwen);
-            Console.WriteLine(wt);
+            //Console.WriteLine();
+            //string huiwen = "12321";
+            //var wt = ex.LIFO(huiwen);
+            //Console.WriteLine(wt);
+            #endregion
+
+            #region
+            Console.WriteLine(ex.CK(3));
+            Console.WriteLine(ex.Fib(2));
             #endregion
             Console.ReadKey();
         }

@@ -120,5 +120,43 @@ namespace Algorithm
             }
             return "???";
         }
+
+        /// <summary>
+        /// 阶乘的算法
+        /// </summary>
+        /// <param name="num"></param>
+        /// <returns></returns>
+        public int CK(int num)
+        {
+            int result = 1;
+            if (num == 0)
+            {
+                return 1;
+            }
+            else
+            {
+                result = CK(num - 1) * num;
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 斐波那契数列的算法
+        /// </summary>
+        /// <param name="num"></param>
+        /// <returns></returns>
+        public int Fib(int num)
+        {
+            int result = 0;
+            if (num <= 2)
+            {
+                return 1;
+            }
+            else
+            {
+                result = Fib(num - 1) + Fib(num - 2);
+            }
+            return result;
+        }
     }
 }
